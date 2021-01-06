@@ -72,21 +72,24 @@ const shareCodes = [
     zd: 'e7lhibzb3zek33girhyhdliwt5fg7y7coc6fbcq',
     nc: '6cc1f00d3df34d49a50a0fffa15b86bf',
     mc: 'MTAxODc2NTEzMTAwMDAwMDAyMDU1MjUwNw==',
-    dd: 'P04z54XCjVWnYaS5m9cZ2T9iygck8chU5sF2Eo',
+    dd: 'T0144qQ3GU9HtgySfgCjVWnYaS5kRrbA',
     jx: '4J64q0wPBO9KYK3SrFOu9Q==',
+    zz: 'S4qQ3GU9HtgySfg',
     },
   // skylee2
   {
     zd: '66nvo67oyxpyce6odctijj3nrhl5wdost2w3fry',
     nc: '964765d091634c699247597f1ce199fe',
     mc: 'MTAxODc2NTEzMzAwMDAwMDAxNDcyMDE2NQ==',
-    dd: 'P04z54XCjVWnYaS5m9cZxe7vyIcyAr5LkWY_A',
+    dd: 'T0225KkcRBtPoQLRIkvzk_dYdACjVWnYaS5kRrbA',
     jx: 'M7RAgr_EtABMv4X65FO4ig=='
+    zz: 'S5KkcRBtPoQLRIkvzk_dYdA',
   },
   // skylee3
   {
-    dd: 'P04z54XCjVWnYaS5mlRTDmpgz8S0K0',
+    dd: 'T0205KkcN117qwKKWGK9y41fCjVWnYaS5kRrbA',
     jx: 'EBKF96NEIjafPXEj156fVA==',
+    zz: 'S5KkcN117qwKKWGK9y41f',
   },
 ];
 $.result = []
