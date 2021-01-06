@@ -20,7 +20,7 @@ const shareCodes = [
     zd: 'ybvc7vkuuqg3q3tc2h5pwmkfyi',
     nc: '96cadc24677b452abf157c51cfb1376a',
     mc: 'MTE1NDQ5OTIwMDAwMDAwMzkwODEzMzU=',
-    dd: 'P04z54XCjVWnYaS5m5RWzupnj8',
+    dd: 'T0105aQgG09atgCjVWnYaS5kRrbA',
     jx: '8xiUadjzs_KbIuVygTqkDg==',
     zz: 'S5aQgG09atg',
   },
@@ -29,31 +29,35 @@ const shareCodes = [
     zd: 'e7lhibzb3zek2o3osubib6jnwdifwbxlqmpzu7y',
     nc: 'b74b0d1a1ff74966994d3c9a6eb1bef2',
     mc: 'MTE1NDUwMTI0MDAwMDAwMDQwMTEyNDEz',
-    dd: 'P04z54XCjVWnYaS5m9cZ2T-3npMkO4U00f70V0',
+    dd: 'T0225KkcRBga81LSdBylkvJYdwCjVWnYaS5kRrbA',
     jx: 'k4KqkxwwBXhrxXq6-13dqQ==',
+    zz: 'S5KkcRBga81LSdBylkvJYdw',
   },
   // 悠哉
   {
     zd: 'haofcpgvxtwwoksczndwypn7d7qcxytdwhsfwpa',
     nc: '02f8e4e9947746cea7b57f0f02068f82',
     mc: 'MTAxODExNDYxMTEwMDAwMDAwNDAxMzI3NzU=',
-    dd: 'P04z54XCjVWnYaS5nHeuvAtfsWcHaGmTUT3',
+    dd: 'T019-ivB0Mu6TIJfqM9XLbMCjVWnYaS5kRrbA',
     jx: 'Q3G7yKihFtskVqxkDs4Eiw==',
+    zz: 'S-ivB0Mu6TIJfqM9XLbM',
   },
   // 正阳
   {
     zd: 'awus372yrusdniyfhgunn4m554',
     nc: '63e2663045994a62b2ff1fc13f8a45c3',
     mc: 'MTE1NDQ5OTUwMDAwMDAwNDAxMTI3MTM=',
-    dd: 'P04z54XCjVWnYaS5uCcorhbcKjCJg',
+    dd: 'T012a2nZmL20IdxkCjVWnYaS5kRrbA',
     jx: 'ImRebJq_57-RN3IgPi9m_A==',
+    zz: 'Sa2nZmL20Idxk',
   },
   // luccy
   {
     zd: 'oss2ycictwzowutap6w6fvllhfnzpbfw4uapnvi',
     nc: '809e185f1db1416194f416381bb4fb4f',
-		mc: 'MTAxODExNTM5NDAwMDAwMDA0MDEzMjc4Mw==',
+    mc: 'MTAxODExNTM5NDAwMDAwMDA0MDEzMjc4Mw==',
     dd: 'P04z54XCjVWnYaS5uCdrLh_fKvgIXjDJ9xTJ0cnmA',
+    zz: 'Sa2jXmJm4Iv5j9Y9MQXmNoL7-',
   },
   // 俊辰
   {
