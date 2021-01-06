@@ -83,7 +83,6 @@ const shareCodes = [
     mc: 'MTAxODc2NTEzMzAwMDAwMDAxNDcyMDE2NQ==',
     dd: 'T0225KkcRBtPoQLRIkvzk_dYdACjVWnYaS5kRrbA',
     jx: 'M7RAgr_EtABMv4X65FO4ig=='
-    zz: 'S5KkcRBtPoQLRIkvzk_dYdA',
   },
   // skylee3
   {
