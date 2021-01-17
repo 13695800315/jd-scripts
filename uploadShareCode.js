@@ -19,23 +19,23 @@ let crazyJoyCodes = ['p6ds_iLSw23EDt21SPsDpA==', 'QrAI7deSXLS6wERHyLtoPat9zd5YaB
 
 
 const shareCodeArr = [{
-    url: 'http://api.turinglabs.net/api/v1/jd/farm/create/sharecode/',
+    url: 'http://jd.turinglabs.net/api/v2/jd/farm/create/sharecode/',
     name: '东东农场',
     shareCode: fruitShareCodes
 }, {
-    url: 'http://api.turinglabs.net/api/v1/jd/ddfactory/create/sharecode/',
+    url: 'http://jd.turinglabs.net/api/v2/jd/ddfactory/create/sharecode/',
     name: '东东工厂',
     shareCode: jdfactoryShareCods
 }, {
-    url: 'http://api.turinglabs.net/api/v1/jd/pet/create/sharecode/',
+    url: 'http://jd.turinglabs.net/api/v2/jd/pet/create/sharecode/',
     name: '东东萌宠',
     shareCode: petShareCodes
 }, {
-    url: 'http://api.turinglabs.net/api/v1/jd/bean/create/sharecode/',
+    url: 'http://jd.turinglabs.net/api/v2/jd/bean/create/sharecode/',
     name: '种豆得豆',
     shareCode: plantBeanShareCodes
 }, {
-    url: 'http://api.turinglabs.net/api/v1/jd/jxfactory/create/sharecode/',
+    url: 'http://jd.turinglabs.net/api/v2/jd/jxfactory/create/sharecode/',
     name: '京喜工厂',
     shareCode: dreamFactoryCodes
 }, {
@@ -88,7 +88,7 @@ async function uploadShareCode() {
 
 async function taskUrl(url) {
     return new Promise(resolve => {
-        $.get({ url }, (err, resp, data) => {
+        $.get({ url: url, timeout: 10000 }, (err, resp, data) => {            
             try {
                 if (err) {
                     console.log(`${JSON.stringify(err)}`)
