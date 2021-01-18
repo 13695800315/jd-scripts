@@ -35,9 +35,12 @@
 
  - 使用教程看 [GitHub Action教程](githubAction.md)
  - GitHub Action 定时运行会有延迟(大概15分钟左右),故一些需要抢购(对时间要求比较严格)脚本不适合使用(例如`jd_joy_reward.js`, `jd_blueCoin.js`等脚本)
- - GitHub Action需要用到的[Secrets集合](https://github.com/fm1223/jd-scripts/blob/master/githubAction.md#%E4%B8%8B%E6%96%B9%E6%8F%90%E4%BE%9B%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84-secrets%E5%85%A8%E9%9B%86%E5%90%88)
+ - GitHub Action可能用到的[Secrets集合](https://github.com/lxk0301/jd_scripts/blob/master/githubAction.md)
+ - `jd_crazy_joy_coin.js`并不适合`actions`的方式运行，故改为每小时运行一次，每次挂机两次。建议使用本地电脑单独运行。
+ - 自动同步代码[教程](https://github.com/fm1223/jd-scripts/blob/master/githubAction.md#%E8%87%AA%E5%8A%A8%E5%90%8C%E6%AD%A5fork%E5%90%8E%E7%9A%84%E4%BB%A3%E7%A0%81)
 
 # 只保留了本仓库适合的食用方式，其它方式请访问[原库](https://github.com/lxk0301/jd_scripts)。
+
 
 ### 特别感谢(排名不分先后)：
 * [@NobyDa](https://github.com/NobyDa)
@@ -49,6 +52,5 @@
 * [@Zero-S1](https://github.com/Zero-S1)
 
 * [@uniqueque](https://github.com/uniqueque)
-
 
 * [@nzw9314](https://github.com/nzw9314)

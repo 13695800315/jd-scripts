@@ -43,6 +43,8 @@ jobs:
           node jd_syj.js # 十元街
           node jd_bean_home.js # 领京豆额外奖励&抢京豆
           node jd_rankingList.js # 京东排行榜
+          node jd_cash.js # 签到领现金
+          node jx_sign.js # 京喜签到+双签到
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
@@ -56,3 +58,4 @@ jobs:
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
           JD_818_SHAREID_NOTIFY: ${{ secrets.JD_818_SHAREID_NOTIFY }}
           JD_USER_AGENT: ${{ secrets.JD_USER_AGENT }}
+          JD_CASH_SHARECODES: ${{ secrets.JD_CASH_SHARECODES }}
