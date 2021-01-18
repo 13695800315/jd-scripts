@@ -7,7 +7,7 @@
 ### 当前库并不保证同步[作者](https://github.com/LXK9301)所有代码，并且随时可能停更，禁止fork。建议访问[原库](https://github.com/LXK9301/jd_scripts)
 
 # 原作者赞赏码(开发维护不易,请赏杯茶水费)
-<div align=center><img width="250" height="250" src="https://raw.githubusercontent.com/fm1223/jd_scripts/master/icon/thanks.jpg"/></div>
+<div align=center><img width="250" height="250" src="https://raw.githubusercontent.com/LXK9301/jd_scripts/master/icon/thanks.jpg"/></div>
 
 ## 特别声明:
 
