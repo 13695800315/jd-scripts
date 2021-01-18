@@ -1,13 +1,13 @@
 # 重要的事情说三遍
-### 这不是原作者库，原库[传送门](https://github.com/lxk0301/jd_scripts)
-## 这不是原作者库，原库[传送门](https://github.com/lxk0301/jd_scripts)
-# 这不是原作者库，原库[传送门](https://github.com/lxk0301/jd_scripts)
+### 这不是原作者库，原库[传送门](https://github.com/LXK9301/jd_scripts)
+## 这不是原作者库，原库[传送门](https://github.com/LXK9301/jd_scripts)
+# 这不是原作者库，原库[传送门](https://github.com/LXK9301/jd_scripts)
 
 ### 本库特别声明:
-### 当前库并不保证同步[作者](https://github.com/lxk0301)所有代码，并且随时可能停更，禁止fork。建议访问[原库](https://github.com/lxk0301/jd_scripts)
+### 当前库并不保证同步[作者](https://github.com/LXK9301)所有代码，并且随时可能停更，禁止fork。建议访问[原库](https://github.com/LXK9301/jd_scripts)
 
 # 原作者赞赏码(开发维护不易,请赏杯茶水费)
-<div align=center><img width="250" height="250" src="https://raw.githubusercontent.com/fm1223/jd_scripts/master/icon/thanks.jpg"/></div>
+<div align=center><img width="250" height="250" src="https://raw.githubusercontent.com/LXK9301/jd_scripts/master/icon/thanks.jpg"/></div>
 
 ## 特别声明:
 
@@ -15,15 +15,15 @@
 
 * 本项目内所有资源文件，禁止任何公众号、自媒体进行任何形式的转载、发布。
 
-* lxk0301对任何脚本问题概不负责，包括但不限于由任何脚本错误导致的任何损失或损害.
+* LXK9301对任何脚本问题概不负责，包括但不限于由任何脚本错误导致的任何损失或损害.
 
-* 间接使用脚本的任何用户，包括但不限于建立VPS或在某些行为违反国家/地区法律或相关法规的情况下进行传播, lxk0301 对于由此引起的任何隐私泄漏或其他后果概不负责.
+* 间接使用脚本的任何用户，包括但不限于建立VPS或在某些行为违反国家/地区法律或相关法规的情况下进行传播, LXK9301 对于由此引起的任何隐私泄漏或其他后果概不负责.
 
 * 请勿将Script项目的任何内容用于商业或非法目的，否则后果自负.
 
 * 如果任何单位或个人认为该项目的脚本可能涉嫌侵犯其权利，则应及时通知并提供身份证明，所有权证明，我们将在收到认证文件后删除相关脚本.
 
-* 任何以任何方式查看此项目的人或直接或间接使用该Script项目的任何脚本的使用者都应仔细阅读此声明。lxk0301 保留随时更改或补充此免责声明的权利。一旦使用并复制了任何相关脚本或Script项目的规则，则视为您已接受此免责声明.
+* 任何以任何方式查看此项目的人或直接或间接使用该Script项目的任何脚本的使用者都应仔细阅读此声明。LXK9301 保留随时更改或补充此免责声明的权利。一旦使用并复制了任何相关脚本或Script项目的规则，则视为您已接受此免责声明.
 
  **您必须在下载后的24小时内从计算机或手机中完全删除以上内容.**  </br>
 > ***您使用或者复制了本仓库且本人制作的任何脚本，则视为`已接受`此声明，请仔细阅读*** 
@@ -35,11 +35,11 @@
 
  - 使用教程看 [GitHub Action教程](githubAction.md)
  - GitHub Action 定时运行会有延迟(大概15分钟左右),故一些需要抢购(对时间要求比较严格)脚本不适合使用(例如`jd_joy_reward.js`, `jd_blueCoin.js`等脚本)
- - GitHub Action可能用到的[Secrets集合](https://github.com/lxk0301/jd_scripts/blob/master/githubAction.md)
+ - GitHub Action可能用到的[Secrets集合](https://github.com/LXK9301/jd_scripts/blob/master/githubAction.md)
  - `jd_crazy_joy_coin.js`并不适合`actions`的方式运行，故改为每小时运行一次，每次挂机两次。建议使用本地电脑单独运行。
  - 自动同步代码[教程](https://github.com/fm1223/jd-scripts/blob/master/githubAction.md#%E8%87%AA%E5%8A%A8%E5%90%8C%E6%AD%A5fork%E5%90%8E%E7%9A%84%E4%BB%A3%E7%A0%81)
 
-# 只保留了本仓库适合的食用方式，其它方式请访问[原库](https://github.com/lxk0301/jd_scripts)。
+# 只保留了本仓库适合的食用方式，其它方式请访问[原库](https://github.com/LXK9301/jd_scripts)。
 
 
 ### 特别感谢(排名不分先后)：
