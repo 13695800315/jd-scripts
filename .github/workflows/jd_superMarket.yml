@@ -54,3 +54,7 @@ jobs:
           SUPERMARKET_SHARECODES: ${{ secrets.SUPERMARKET_SHARECODES }}
           jdSuperMarketLottery: ${{ secrets.SUPERMARKET_LOTTERY }}
           JD_USER_AGENT: ${{ secrets.JD_USER_AGENT }}
+          JOIN_PK_TEAM: ${{ secrets.JOIN_PK_TEAM }}
+          SUPERMARKET_LOTTERY: ${{ secrets.SUPERMARKET_LOTTERY }}
+          SUPERMARKET_UPGRADE: ${{ secrets.SUPERMARKET_UPGRADE }}
+          jdBusinessCircleJump: ${{ secrets.jdBusinessCircleJump }}
