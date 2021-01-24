@@ -12,27 +12,27 @@ token获取途径：
 [MITM]
 hostname = draw.jdfcloud.com
 
-Surge
+===========Surge=================
 [Script]
-宠汪汪邀请助力与赛跑助力 = type=cron,cronexp="15 10 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
-宠汪汪助力更新Token = type=http-response,pattern=^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code=, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
-宠汪汪助力获取Token = type=http-request,pattern=^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId=, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
+宠汪汪邀请助力与赛跑助力 = type=cron,cronexp="15 10 * * *",wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js
+宠汪汪助力更新Token = type=http-response,pattern=^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code=, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js
+宠汪汪助力获取Token = type=http-request,pattern=^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId=, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js
 
-圈X
+===================Quantumult X=====================
 [task_local]
 # 宠汪汪邀请助力与赛跑助力
-15 10 * * * https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js, tag=宠汪汪邀请助力与赛跑助力, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png, enabled=true
+15 10 * * * https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js, tag=宠汪汪邀请助力与赛跑助力, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jdcww.png, enabled=true
 [rewrite_local]
 # 宠汪汪助力更新Token
-^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code= url script-response-body https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
+^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code= url script-response-body https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js
 # 宠汪汪助力获取Token
-^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId= url script-request-header https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js
+^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId= url script-request-header https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js
 
-*****Loon****
+=====================Loon=====================
 [Script]
-cron "15 10 * * *" script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js, tag=宠汪汪邀请助力与赛跑助力
-http-response ^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code= script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js, requires-body=true, timeout=10, tag=宠汪汪助力更新Token
-http-request ^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId= script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_joy_run.js, requires-body=true, timeout=10, tag=宠汪汪助力获取Token
+cron "15 10 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js, tag=宠汪汪邀请助力与赛跑助力
+http-response ^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/addUser\?code= script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js, requires-body=true, timeout=3600, tag=宠汪汪助力更新Token
+http-request ^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId= script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_joy_run.js, requires-body=true, timeout=3600, tag=宠汪汪助力获取Token
  **/
 const isRequest = typeof $request != "undefined"
 const $ = new Env('宠汪汪赛跑');
@@ -51,20 +51,20 @@ const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [], cookie = '';
 const headers = {
-  'Connection': 'keep-alive',
-  'Accept-Encoding': 'gzip, deflate, br',
-  'App-Id': '',
-  'Lottery-Access-Signature': '',
-  'Content-Type': 'application/json',
-  'reqSource': 'weapp',
-  'User-Agent': $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0") : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0"),
-  'Cookie': '',
-  'openId': '',
-  'Host': 'draw.jdfcloud.com',
-  'Referer': 'https://servicewechat.com/wxccb5c536b0ecd1bf/633/page-frame.html',
-  'Accept-Language': 'zh-cn',
-  'Accept': '*/*',
-  'LKYLToken': ''
+  'Connection' : 'keep-alive',
+  'Accept-Encoding' : 'gzip, deflate, br',
+  'App-Id' : '',
+  'Lottery-Access-Signature' : '',
+  'Content-Type' : 'application/json',
+  'reqSource' : 'weapp',
+  'User-Agent' : $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0"),
+  'Cookie' : '',
+  'openId' : '',
+  'Host' : 'draw.jdfcloud.com',
+  'Referer' : 'https://servicewechat.com/wxccb5c536b0ecd1bf/633/page-frame.html',
+  'Accept-Language' : 'zh-cn',
+  'Accept' : '*/*',
+  'LKYLToken' : ''
 }
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
@@ -116,7 +116,7 @@ async function getToken() {
     if (LKYLToken) {
       $.log(`${$.name} token\n${LKYLToken}\n`);
       count = $.getdata('countFlag') ? $.getdata('countFlag') * 1 : 0;
-      count++;
+      count ++;
       console.log(`count: ${count}`)
       $.setdata(`${count}`, 'countFlag');
       if ($.getdata('countFlag') * 1 === 3) {
@@ -124,7 +124,7 @@ async function getToken() {
         $.setdata(`${count}`, 'countFlag');
         $.msg($.name, '更新Token: 成功🎉', ``);
         console.log(`开始上传Token`)
-        await $.http.get({ url: `http://jd.turinglabs.net/api/v2/jd/joy/create/${LKYLToken}/` }).then((resp) => {
+        await $.http.get({url: `http://jd.turinglabs.net/api/v2/jd/joy/create/${LKYLToken}/`}).then((resp) => {
           if (resp.statusCode === 200) {
             let { body } = resp;
             console.log(`Token提交结果:${body}`)
@@ -136,16 +136,16 @@ async function getToken() {
       $.setdata(LKYLToken, 'jdJoyRunToken');
     }
     $.done({ body: JSON.stringify(body) })
-  } else if (isURL(url, /^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId=/)) {
+  } else if (isURL(url, /^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/api\/user\/user\/detail\?openId=/)){
     if ($request && $request.method !== 'OPTIONS') {
       const LKYLToken = $request.headers['LKYLToken'];
       //if ($.getdata('jdJoyRunToken')) {
-      //if ($.getdata('jdJoyRunToken') !== LKYLToken) {
+        //if ($.getdata('jdJoyRunToken') !== LKYLToken) {
 
-      //}
-      //$.msg($.name, '更新获取Token: 成功🎉', `\n${LKYLToken}\n`);
+        //}
+        //$.msg($.name, '更新获取Token: 成功🎉', `\n${LKYLToken}\n`);
       //} else {
-      //$.msg($.name, '获取Token: 成功🎉', `\n${LKYLToken}\n`);
+        //$.msg($.name, '获取Token: 成功🎉', `\n${LKYLToken}\n`);
       //}
       $.setdata(LKYLToken, 'jdJoyRunToken');
 
@@ -160,7 +160,7 @@ async function getToken() {
 }
 function readToken() {
   return new Promise(resolve => {
-    $.get({ url: `http://jd.turinglabs.net/api/v2/jd/joy/read/1/` }, (err, resp, data) => {
+    $.get({url: `http://jd.turinglabs.net/api/v2/jd/joy/read/1/`, 'timeout': 10000}, (err, resp, data) => {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)
@@ -181,7 +181,7 @@ function readToken() {
 }
 async function main() {
   if (!cookiesArr[0]) {
-    $.msg($.name, '【提示】请先获取京东账号一cookie\n直接使用NobyDa的京东签到获取', 'https://bean.m.jd.com/', { "open-url": "https://bean.m.jd.com/" });
+    $.msg($.name, '【提示】请先获取京东账号一cookie\n直接使用NobyDa的京东签到获取', 'https://bean.m.jd.com/bean/signIndex.action', {"open-url": "https://bean.m.jd.com/bean/signIndex.action"});
     return;
   }
   const readTokenRes = await readToken();
@@ -249,16 +249,16 @@ async function invite(invite_pins) {
       if (data.success) {
         const { helpStatus } = data.data;
         console.log(`helpStatus ${helpStatus}`)
-        if (helpStatus === 'help_full') {
+        if (helpStatus=== 'help_full') {
           console.log(`您的邀请助力机会已耗尽\n`)
           break;
-        } else if (helpStatus === 'cannot_help') {
+        } else if (helpStatus=== 'cannot_help') {
           console.log(`已给该好友 ${item} 助力过或者此friendPin是你自己\n`)
           continue;
-        } else if (helpStatus === 'invite_full') {
+        } else if (helpStatus=== 'invite_full') {
           console.log(`助力失败，该好友 ${item} 已经满3人给他助力了,无需您再次助力\n`)
           continue;
-        } else if (helpStatus === 'can_help') {
+        } else if (helpStatus=== 'can_help') {
           console.log(`开始给好友 ${item} 助力\n`)
           const LKYL_DATA = await helpInviteFriend(item);
           if (LKYL_DATA.errorCode === 'L0001' && !LKYL_DATA.success) {
@@ -275,7 +275,7 @@ async function invite(invite_pins) {
       } else {
         if (data.errorCode === 'B0001') {
           console.log('京东Cookie失效');
-          $.msg($.name, `【提示】京东cookie已失效`, `京东账号${$.index} ${UserName}\n请重新登录获取\nhttps://bean.m.jd.com/`, { "open-url": "https://bean.m.jd.com/" });
+          $.msg($.name, `【提示】京东cookie已失效`, `京东账号${$.index} ${UserName}\n请重新登录获取\nhttps://bean.m.jd.com/bean/signIndex.action`, {"open-url": "https://bean.m.jd.com/bean/signIndex.action"});
           $.jdLogin = false;
           break
         }
