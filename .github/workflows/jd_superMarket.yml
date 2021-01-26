@@ -57,4 +57,3 @@ jobs:
           JOIN_PK_TEAM: ${{ secrets.JOIN_PK_TEAM }}
           SUPERMARKET_LOTTERY: ${{ secrets.SUPERMARKET_LOTTERY }}
           SUPERMARKET_UPGRADE: ${{ secrets.SUPERMARKET_UPGRADE }}
-          jdBusinessCircleJump: ${{ secrets.jdBusinessCircleJump }}
