@@ -53,3 +53,4 @@ jobs:
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
           JD_USER_AGENT: ${{ secrets.JD_USER_AGENT }}
           FACTORAY_WANTPRODUCT_NAME: ${{ secrets.FACTORAY_WANTPRODUCT_NAME }}
+          JDFACTORY_FORBID_ACCOUNT: ${{ secrets.JDFACTORY_FORBID_ACCOUNT }}
