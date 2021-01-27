@@ -87,7 +87,8 @@ function exchange() {
     $.post(taskUrl('v1/user/exchange/bean'), (err, resp, data) => {
       try {
         if (err) {
-          data = JSON.parse(resp.body)
+          data = JSON.parse(resp)
+          console.log(`兑换失败：${JSON.stringify(data)}`)
         } else {
           if (safeGet(data)) {
             data = JSON.parse(data);
